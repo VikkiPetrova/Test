@@ -1,12 +1,12 @@
 # JUnit_TestNG-Maven
 
-1. Add JUnit or TestNg dependency in POM file
+1. Add TestNg dependency in POM file
 2. Add maven-surefire plugin in POM file
 
-3. Go to src/main/java/application and open Calculator class
+3. Go to src/main/java/application and copy Calculator class to your repository
 4. Implement all methods with TODO comments
 
-5. Go to the test/java/simpleTask and open SimpleTestClass
+5. Go to the test/java/simpleTask and copy SimpleTestClass class to your repository
 6. Create test for all simple methods from Calculator class
 
 
@@ -24,13 +24,8 @@
 
 ************************************************************
 
-15. If you pick JUnit:<br />
-Add category "Regression" for all tests in SimpleTestClass<br />
-Add category "Smoke" for all tests in MediumTestClass<br />
-Add category "Regular" for all tests in HardTestClass<br />
-run only Smoke and Regression tests using runner class<br />
 
-16. If you pick TestNG:<br />
+15. If you pick TestNG:<br />
 Add group "Regression" for 1 test in SimpleTestClass<br />
 Add group "Smoke" for 1 test in MediumTestClass<br />
 Create testng.xml file<br />
