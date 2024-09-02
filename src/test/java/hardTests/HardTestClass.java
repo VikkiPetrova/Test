@@ -1,16 +1,27 @@
 package hardTests;
 
 import application.Calculator;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Tag;
+
 
 public class HardTestClass {
 
   Calculator calc = new Calculator();
 
-  //TODO (**)
-  //add tests for new method - divide by zero case
+  @Test
+  public void testAddMultipleValues() {
+    int actualResult = calc.addMultipleValues(1, 2, 3, 4, 5);
+    assertEquals(15, actualResult);
+  }
 
-  //TODO (**)
-  //add tests for new method - addition with multiple parameters
+  @Test
+  public void testDivideByZero() {
+    int actualResult = calc.divideByZero(10, 0);
+    assertEquals(-100, actualResult);
+  }
+
 
 
 }
