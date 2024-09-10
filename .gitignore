@@ -1,3 +1,6 @@
+gitignore
+/build/
+*.log
 .idea/
 *.iml
 target/

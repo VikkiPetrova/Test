@@ -36,7 +36,6 @@ public class Calculator {
         }
 
 
-
     //***************Hard methods************************
 
     public int addMultipleValues(int... values) {
@@ -56,8 +55,6 @@ public class Calculator {
 
 
 }
-
-
 
 
 
