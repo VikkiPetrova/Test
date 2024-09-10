@@ -17,7 +17,6 @@ public class MediumTestClass {
     assertEquals(5, actualResult, 0.01);
   }
 
-
   @Test
   public void testEvenOrOdd() {
     boolean actualResult = calc.evenOrOdd(10);
