@@ -21,7 +21,10 @@ public class Calculator {
 
     //***************Medium methods************************
 
-    public double average(int a, int b, int c) {return (a + b + c) / 3;}
+    public double average(int a, int b, int c) {
+        double avg = (a + b + c) / 3.0;
+        return Math.round(avg * 100.0) / 100.0;
+    }
 
     public boolean evenOrOdd(int a) {
         if (a % 2 == 0) {

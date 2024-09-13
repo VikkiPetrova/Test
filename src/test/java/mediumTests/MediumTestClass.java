@@ -3,8 +3,8 @@ package mediumTests;
 import application.Calculator;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MediumTestClass {
 
@@ -13,16 +13,19 @@ public class MediumTestClass {
   @Test
   @Tag("smoke")
   public void testAverage() {
-    double actualResult = calc.average(10, 5, 2);
-    assertEquals(5, actualResult, 0.01);
+    double actualResult = Math.round((calc.average(15, 5, 5)) * 100) / 100.0;
+    assertEquals(8.33, actualResult, 0.00);
   }
 
   @Test
-  public void testEvenOrOdd() {
-    boolean actualResult = calc.evenOrOdd(10);
-    assertTrue(calc.evenOrOdd(7));
+  public void testOdd() {
+    assertFalse(calc.evenOrOdd(7));
   }
 
+  @Test
+  public void testEven() {
+    assertTrue(calc.evenOrOdd(2));
+  }
 
 
   @Test

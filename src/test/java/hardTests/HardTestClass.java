@@ -12,8 +12,8 @@ public class HardTestClass {
 
   @Test
   public void testAddMultipleValues() {
-    int actualResult = calc.addMultipleValues(1, 2, 3, 4, 5);
-    assertEquals(15, actualResult);
+    int actualResult = calc.addMultipleValues(1, 2, 3, 7, 5);
+    assertEquals(18, actualResult);
   }
 
   @Test
