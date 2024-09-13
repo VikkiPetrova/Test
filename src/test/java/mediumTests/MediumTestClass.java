@@ -20,7 +20,7 @@ public class MediumTestClass {
   @Test
   public void testEvenOrOdd() {
     boolean actualResult = calc.evenOrOdd(10);
-    assertTrue(true);
+    assertTrue(calc.evenOrOdd(7));
   }
 
 
